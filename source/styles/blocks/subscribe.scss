@@ -1,0 +1,15 @@
+// .subscribe {
+
+// }
+
+.subscribe__text {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: $secondary-font-color;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

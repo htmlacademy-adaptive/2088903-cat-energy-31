@@ -1,0 +1,13 @@
+// .product {
+
+// }
+
+.product__text {
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

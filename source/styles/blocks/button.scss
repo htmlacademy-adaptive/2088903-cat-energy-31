@@ -1,0 +1,18 @@
+.button {
+  padding: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--primary {
+  background-color: $bg-accent;
+  color: $accent-font-color;
+}
+
+.button--secondary {
+  background-color: $bg-secondary;
+  color: $primary-font-color;
+}

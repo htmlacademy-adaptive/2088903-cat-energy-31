@@ -1,0 +1,35 @@
+// .extras {
+
+// }
+
+.extras__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.extras__item-title {
+  font-size: 16px;
+  line-height: 16px;
+  color: $quaternary-font-color;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.extras__item-text {
+  line-height: 14px;
+
+  @media (min-width: $tablet) {
+    line-height: 20px;
+  }
+}
+
+.extras__special-offer-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $accent-font-color;
+}
