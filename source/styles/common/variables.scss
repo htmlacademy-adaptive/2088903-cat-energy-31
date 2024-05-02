@@ -1,16 +1,25 @@
 $tablet: 768px;
 $desktop: 1440px;
 
-$primary-font: "Lato", sans-serif;
-$secondary-font: "Oswald", sans-serif;
+$primary-font: "Lato", "Arial", sans-serif;
+$secondary-font: "Oswald", "Arial", sans-serif;
 
-$accent-font-color: #ffffff;
+$accent-color: #68b738;
+$primary-color: #f2f2f2;
+
+$white: #ffffff;
+$black: #000000;
+
 $primary-font-color: #444444;
-$secondary-font-color: #000000;
-$tertiary-font-color: #111111;
-$quaternary-font-color: #222222;
+$subtitle-font-color: #222222;
+$secondary-font-color: #111111;
 
-$bg-accent: #68b738;
-$bg-primary: #ffffff;
-$bg-secondary: #f2f2f2;
-$bg-tertiary: #eaeaea;
+$button-primary-hover-bg: #5eaa2f;
+$button-secondary-hover-bg: #ebebeb;
+
+$logo-border: 1px solid #d9d9d9;
+$catalog-border: 1px solid #ebebeb;
+$extra-border: 1px solid #cdcdcd;
+$input-border: 1px solid #cdcdcd;
+
+$icon-color: #666666;
