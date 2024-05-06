@@ -2,11 +2,69 @@
 
 // }
 
+.programs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.programs__item {
+  &::before {
+    content: "";
+    display: block;
+    min-width: 50px;
+    width: 50px;
+    min-height: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.programs__item--slim::before {
+  background-image: url("../../icons/stack.svg#slim-cat");
+  background-size: 50px 53px;
+}
+
+.programs__item--pro::before {
+  background-image: url("../../icons/stack.svg#tiger");
+  background-size: 50px 53px;
+}
+
 .programs__item-button {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  max-width: max-content;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
   color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    display: block;
+    background-color: $black;
+    mask-image: url("../../icons/stack.svg#arrow-to-right");
+    mask-size: 24px 10px;
+    mask-repeat: no-repeat;
+    mask-position: -8px center;
+    transition: mask-position 0.3s ease;
+  }
+
+  &:hover::after {
+    mask-position: left center;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     font-size: 20px;

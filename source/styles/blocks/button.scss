@@ -1,18 +1,32 @@
 .button {
   padding: 10px;
-
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
 }
 
 .button--primary {
   background-color: $accent-color;
   color: $white;
+
+  &:hover {
+    background-color: $button-primary-hover-bg;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }
 
 .button--secondary {
-  background-color: $bg-secondary;
+  background-color: $primary-color;
   color: $primary-font-color;
+
+  &:hover,
+  &:active {
+    background-color: $button-secondary-hover-bg;
+  }
 }

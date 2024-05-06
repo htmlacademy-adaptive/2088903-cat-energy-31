@@ -49,7 +49,7 @@
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width: 1440px)" width="552" height="499" type="image/jpeg" srcset="images/index-can@1x.png 1x, images/index-can@2x.png 2x">
-          <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.png@1x.png 1x, images/index-can-table@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
           <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Изображение продукта Cat Energy">
         </picture>
         <a class="hero__button button button--primary" href="#">Подобрать программу</a>
@@ -59,16 +59,14 @@
       <div class="programs__wrapper container">
         <h2 class="visually-hidden">Программы питания</h2>
         <ul class="programs__list">
-          <li class="programs__item">
+          <li class="programs__item programs__item--slim">
             <h3 class="programs__item-title title-tertiary">Похудение</h3>
             <p class="programs__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <img class="programs__item-image" src="images/program-1.svg" width="50" height="53" alt="Логотип программы похудения slim">
             <a class="programs__item-button" href="#">Каталог slim</a>
           </li>
-          <li class="programs__item">
+          <li class="programs__item programs__item--pro">
             <h3 class="programs__item-title title-tertiary">Набор массы</h3>
             <p class="programs__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <img class="programs__item-image" src="images/program-2.svg" width="67" height="50" alt="Логотип программы похудения pro">
             <a class="programs__item-button" href="#">Каталог pro</a>
           </li>
         </ul>
@@ -78,16 +76,16 @@
       <div class="advantages__wrapper container">
         <h2 class="advantages__title title-primary">Как это работает</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--healthy">
             <p class="advantages__item-description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--handy">
             <p class="advantages__item-description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--swap">
             <p class="advantages__item-description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--result">
             <p class="advantages__item-description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -108,7 +106,7 @@
               <p class="example__item-text">Затрачено времени</p>
             </li>
           </ul>
-          <p class="example__total"><span>Затраты на питание:</span><span>15 000 РУБ.</span></p>
+          <p class="example__total"><span>Затраты на питание:&nbsp;</span><span>15 000 РУБ.</span></p>
         </div>
         <div class="example__slider">
           <picture>
@@ -145,7 +143,7 @@
   <footer class="footer">
     <div class="footer__wrapper container">
       <a class="footer__logo" href="#">
-        <img class="footer__logo-image" src="images/logo-text.svg" width="128" height="124" alt="Текстовый логотип сайта">
+        <img class="footer__logo-image" src="images/logo-text-mobile.svg" width="128" height="124" alt="Текстовый логотип сайта">
       </a>
       <ul class="footer__socials socials">
         <li class="socials__item">
@@ -164,9 +162,11 @@
           </a>
         </li>
       </ul>
-      <a class="footer__copyright" href="#">
-        <span class="footer__copyright-text">HTML Academy</span>
-      </a>
+      <div class="footer__copyright">
+        <a class="footer__copyright-link" href="#">
+          <span class="footer__copyright-text">HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

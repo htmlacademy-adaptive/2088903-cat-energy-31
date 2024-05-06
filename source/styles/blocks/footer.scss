@@ -1,6 +1,62 @@
-// .footer {
+.footer {
+  background-color: $primary-color;
+}
 
-// }
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo-image {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__copyright {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 34px;
+  line-height: 20px;
+}
+
+.footer__copyright-link {
+  color: $primary-font-color;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 27px;
+    height: 100%;
+    mask-image: url("../../icons/stack.svg#copyright-logo");
+    mask-size: 27px 34px;
+    background-color: $icon-color;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: background-color 0.3s ease;
+  }
+
+  &:hover::after {
+    background-color: $accent-color;
+  }
+
+  &:active {
+    color: rgba($primary-font-color, 0.3);
+  }
+
+  &:active::after {
+    background-color: rgba($accent-color, 0.3);
+  }
+}
 
 .footer__copyright-text {
   font-size: 16px;
