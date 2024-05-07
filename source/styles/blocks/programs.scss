@@ -2,19 +2,31 @@
 
 // }
 
+.programs__wrapper {
+  padding-top: 20px;
+}
+
 .programs__list {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .programs__item {
+  position: relative;
+  padding: 20px;
+  background-color: $primary-color;
+
   &::before {
     content: "";
+    position: absolute;
+    top: 24px;
+    left: 20px;
     display: block;
-    min-width: 50px;
     width: 50px;
-    min-height: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: $accent-color;
@@ -23,14 +35,42 @@
   }
 }
 
-.programs__item--slim::before {
+.programs__item--slim::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 27px;
+  display: block;
+  width: 36px;
+  height: 50px;
   background-image: url("../../icons/stack.svg#slim-cat");
-  background-size: 50px 53px;
+  background-size: 36px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.programs__item--pro::before {
+.programs__item--pro::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 12px;
+  display: block;
+  width: 69px;
+  height: 28px;
   background-image: url("../../icons/stack.svg#tiger");
-  background-size: 50px 53px;
+  background-size: 69px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.programs__item-title {
+  padding: 10px 5px 29px 70px;
+}
+
+.programs__item-description {
+  margin: 0 0 15px;
+  padding: 0 13px 23px 0;
+  border-bottom: 1px solid $grey-color;
 }
 
 .programs__item-button {

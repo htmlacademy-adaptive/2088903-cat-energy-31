@@ -1,12 +1,42 @@
-// .example {
+.example {
+  background-color: #eaeaea;
+}
 
-// }
+.example__text-wrapper {
+  padding: 25px 0 0;
+}
+
+.example__description {
+  padding: 40px 0 0;
+}
+
+.example__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 0;
+  padding: 20px 0 0;
+  list-style: none;
+}
+
+.example__item {
+  position: relative;
+  flex: 0 0 124px;
+  height: 56px;
+  border: $input-border;
+  border-radius: 3px;
+}
 
 .example__item-title {
+  margin: 0;
+  padding: 14px 0 0;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   color: $black;
+  text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
     font-size: 30px;
@@ -14,13 +44,34 @@
   }
 }
 
+.example__item-text {
+  position: absolute;
+  left: 21px;
+  bottom: -17px;
+  margin: 0;
+  padding: 0 15px;
+  background-color: #eaeaea;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+}
+
 .example__total {
+  margin: 0;
+  padding: 34px 0 0;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   color: $black;
+  text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
     font-size: 20px;
   }
+}
+
+.example__slider-image {
+  padding: 20px 0 40px;
 }

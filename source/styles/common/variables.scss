@@ -16,13 +16,14 @@ $primary-color: #f2f2f2;
 $secondary-color: #ebebeb;
 $error-color: #ff8282;
 
+$grey-color: #d9d9d9;
+
 $button-primary-hover-bg: #5eaa2f;
 $button-secondary-hover-bg: $secondary-color;
 
 $icon-color: #666666;
 
-$footer-mobile-border: 1px solid #d9d9d9;
-$program-button-border: $footer-mobile-border;
+$footer-mobile-border: 1px solid $grey-color;
 
 $catalog-border: 1px solid $secondary-color;
 
