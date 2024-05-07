@@ -3,12 +3,23 @@
 // }
 
 .nav__list {
+  display: flex;
+  flex-flow: column wrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.nav__item {
+  display: flex;
+  flex: 1 0 66px;
+  justify-content: center;
+  align-items: center;
+  border-top: $nav-border;
+}
+
 .nav__link {
+  font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
   color: $black;
@@ -44,7 +55,9 @@
 }
 
 .nav__link--current {
-  border-bottom: 2px solid $accent-color;
+  @media (min-width: $desktop) {
+    border-bottom: 2px solid $accent-color;
+  }
 
   @media (min-width: $desktop) {
     font-size: 20px;

@@ -1,10 +1,16 @@
 .footer {
+  padding: 20px 0;
   background-color: $primary-color;
 }
 
 .footer__wrapper {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.footer__logo {
+  text-align: center;
+  padding: 20px 0;
 }
 
 .footer__logo-image {
@@ -17,11 +23,22 @@
   }
 }
 
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 20px 0;
+  border-top: $footer-mobile-border;
+}
+
 .footer__copyright {
   position: relative;
   display: flex;
   align-items: center;
   height: 34px;
+  padding: 20px 0;
+  border-top: $footer-mobile-border;
   line-height: 20px;
 }
 

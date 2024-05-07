@@ -1,6 +1,6 @@
-// .advantages {
-
-// }
+.advantages__title {
+  padding: 20px 0 0;
+}
 
 .advantages__list {
   display: grid;
@@ -8,7 +8,7 @@
   row-gap: 20px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 40px 0 49px;
 }
 
 .advantages__item {

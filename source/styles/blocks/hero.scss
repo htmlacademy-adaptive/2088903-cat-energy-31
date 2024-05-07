@@ -2,13 +2,34 @@
 
 // }
 
+.hero {
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/hero-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 302px;
+}
+
+.hero__title {
+  padding: 27px 0 0;
+  text-align: center;
+  color: $white;
+}
+
 .hero__slogan {
+  margin: 0;
+  padding: 25px 0 0;
+  text-align: center;
+  color: $white;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.hero__image {
+  padding: 29px 0 0;
 }
