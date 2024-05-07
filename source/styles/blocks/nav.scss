@@ -5,9 +5,15 @@
 .nav__list {
   display: flex;
   flex-flow: column wrap;
-  list-style: none;
+  height: 100%;
   margin: 0;
   padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .nav__item {
@@ -16,6 +22,11 @@
   justify-content: center;
   align-items: center;
   border-top: $nav-border;
+
+  @media (min-width: $tablet) {
+    flex: unset;
+    border-top: none;
+  }
 }
 
 .nav__link {
@@ -35,6 +46,7 @@
   }
 
   @media (min-width: $tablet) {
+    // height: 36px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -55,7 +67,7 @@
 }
 
 .nav__link--current {
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     border-bottom: 2px solid $accent-color;
   }
 
