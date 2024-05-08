@@ -57,19 +57,6 @@
   line-height: 12px;
 }
 
-.example__item-text {
-  position: absolute;
-  left: 21px;
-  bottom: -17px;
-  margin: 0;
-  padding: 0 15px;
-  background-color: #eaeaea;
-  text-transform: lowercase;
-  text-align: center;
-  font-size: 12px;
-  line-height: 12px;
-}
-
 .example__total {
   margin: 0;
   padding: 34px 0 0;
@@ -83,10 +70,6 @@
   @media (min-width: $tablet) {
     font-size: 20px;
   }
-}
-
-.example__slider-image {
-  padding: 20px 0 40px;
 }
 
 .example__slider-image {
