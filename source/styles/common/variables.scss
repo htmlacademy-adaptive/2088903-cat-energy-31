@@ -15,21 +15,14 @@ $accent-color: #68b738;
 $primary-color: #f2f2f2;
 $secondary-color: #ebebeb;
 $error-color: #ff8282;
+$icon-color: #666666;
 
-$grey-color: #d9d9d9;
+$bg-grey-color: #eaeaea;
 
 $button-primary-hover-bg: #5eaa2f;
 $button-secondary-hover-bg: $secondary-color;
 
-$icon-color: #666666;
-
-$footer-mobile-border: 1px solid $grey-color;
-
-$catalog-border: 1px solid $secondary-color;
-
-$input-border: 1px solid #cdcdcd;
-$extra-border: $input-border;
-$example-border: $input-border;
-
-$nav-border: 1px solid #e6e6e6;
-$section-border: $nav-border;
+$primary-border: 1px solid #cdcdcd;
+$secondary-border: 1px solid #d9d9d9;
+$tertiary-border: 1px solid $secondary-color;
+$quaternary-border: 1px solid #e6e6e6;

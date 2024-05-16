@@ -6,6 +6,12 @@
 .footer__wrapper {
   display: flex;
   flex-flow: column wrap;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer__logo {
@@ -29,31 +35,39 @@
   gap: 24px;
   margin: 0;
   padding: 20px 0;
-  border-top: $footer-mobile-border;
+  border-top: $secondary-border;
+
+  @media (min-width: $tablet) {
+    border-top: none;
+  }
 }
 
 .footer__copyright {
-  position: relative;
   display: flex;
   align-items: center;
-  height: 34px;
   padding: 20px 0;
-  border-top: $footer-mobile-border;
+  border-top: $secondary-border;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    border-top: none;
+  }
 }
 
 .footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+  width: 100%;
   color: $primary-font-color;
   text-decoration: none;
   transition: background-color 0.3s ease;
 
   &::after {
     content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 27px;
-    height: 100%;
+    width: 27px;
+    height: 34px;
     mask-image: url("../../icons/stack.svg#copyright-logo");
     mask-size: 27px 34px;
     background-color: $icon-color;

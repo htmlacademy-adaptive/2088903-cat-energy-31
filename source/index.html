@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cat Energy 111</title>
+  <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -102,32 +102,40 @@
         <div class="example__text-wrapper">
           <h2 class="example__title title-primary">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
             по 16 часов в день.</p>
-          <ul class="example__list">
-            <li class="example__item">
-              <p class="example__item-title">5 кг</p>
-              <p class="example__item-text">Снижение<br> веса</p>
-            </li>
-            <li class="example__item">
-              <p class="example__item-title">60 дней</p>
-              <p class="example__item-text">Затрачено<br> времени</p>
-            </li>
-          </ul>
-          <p class="example__total"><span>Затраты на питание:&nbsp;</span><span>15 000 РУБ.</span></p>
+          <div class="example__stats">
+            <ul class="example__list">
+              <li class="example__item">
+                <p class="example__item-title">5 кг</p>
+                <p class="example__item-text">Снижение веса</p>
+              </li>
+              <li class="example__item">
+                <p class="example__item-title">60 дней</p>
+                <p class="example__item-text">Затрачено времени</p>
+              </li>
+            </ul>
+            <p class="example__total">
+              <span>Затраты на питание:&nbsp;</span>
+              <span>15 000 РУБ.</span>
+            </p>
+          </div>
         </div>
         <div class="example__slider">
-          <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
-            <img class="example__slider-image" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Фото до, толстый кот">
-          </picture>
-          <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
-            <img class="example__slider-image" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Фото после, худой кот">
-          </picture>
-          <button class="example__slider-button" type="button">
-            <span class="visually-hidden">Передвинуть полосу слайдера</span>
-          </button>
+          <div class="img" id="img1">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
+              <img class="example__slider-image" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Фото до, толстый кот">
+            </picture>
+          </div>
+          <div class="img" id="img2">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
+              <img class="example__slider-image" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Фото после, худой кот">
+            </picture>
+          </div>
+          <label class="visually-hidden" for="slider">Передвинуть полосу слайдера</label>
+          <input class="example__slider-button" type="range" min="0" max="100" value="50" id="slider" name="slider">
         </div>
       </div>
     </section>

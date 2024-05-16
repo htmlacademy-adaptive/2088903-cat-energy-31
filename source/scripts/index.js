@@ -1,3 +1,4 @@
+// Menu button
 const menuBtn = document.getElementById('mobile-menu');
 
 const onMenuClick = () => {
@@ -9,3 +10,15 @@ const onMenuClick = () => {
 };
 
 document.addEventListener('DOMContentLoaded', () => menuBtn.addEventListener('click', onMenuClick));
+
+
+// Slider
+/* const slider = document.getElementById('slider');
+const slideContainer = document.getElementById('img1');
+
+const onInputChange = () => {
+  slideContainer.style.width = `${slider.value}%`;
+  slider.style.setProperty('--pseudo-content', `${slider.value - 1}%`);
+};
+
+document.addEventListener('DOMContentLoaded', () => slider.addEventListener('change', onInputChange)); */

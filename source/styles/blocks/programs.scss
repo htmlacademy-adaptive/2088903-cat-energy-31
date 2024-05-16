@@ -7,73 +7,125 @@
 }
 
 .programs__list {
-  display: flex;
-  flex-flow: column wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.programs__item {
-  position: relative;
-  padding: 20px;
-  background-color: $primary-color;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 20px;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $accent-color;
-    background-repeat: no-repeat;
-    background-position: center;
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 }
 
-.programs__item--slim::after {
-  content: "";
-  position: absolute;
-  top: 21px;
-  left: 27px;
-  display: block;
-  width: 36px;
-  height: 50px;
-  background-image: url("../../icons/stack.svg#slim-cat");
-  background-size: 36px 50px;
-  background-repeat: no-repeat;
-  background-position: center;
+.programs__item {
+  display: grid;
+  grid-template-areas:
+    "icon    title"
+    "content content"
+    "button  button";
+  grid-template-columns: 70px 1fr;
+  min-height: 266px;
+  padding: 20px;
+  background-color: $primary-color;
+
+  @media (min-width: $tablet) {
+    grid-template-areas:
+      "title   icon"
+      "content icon"
+      "button  icon";
+    grid-template-columns: 340px 1fr;
+    padding: 77px 0 53px 52px;
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    grid-area: icon;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-areas:
+      "icon    title"
+      "content content"
+      "button  button";
+    grid-template-columns: 214px 1fr;
+  }
 }
 
-.programs__item--pro::after {
-  content: "";
-  position: absolute;
-  top: 35px;
-  left: 12px;
-  display: block;
-  width: 69px;
-  height: 28px;
+.programs__item--slim::before {
+  width: 50px;
+  height: 53px;
+  margin-top: -3px;
+  background-image: url("../../icons/stack.svg#sitting-cat");
+  background-size: 50px 53px;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 211px;
+    margin-top: 4px;
+    margin-left: 53px;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100px;
+    height: 106px;
+    background-size: 100px 106px;
+  }
+}
+
+.programs__item--pro::before {
+  width: 67px;
+  height: 50px;
+  margin-top: 14px;
+  margin-left: -7px;
   background-image: url("../../icons/stack.svg#tiger");
-  background-size: 69px 28px;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: 67px 50px;
+
+  @media (min-width: $tablet) {
+    width: 268px;
+    height: 200px;
+    margin-left: 19px;
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 134px;
+    height: 100px;
+    background-size: 134px 100px;
+  }
 }
 
 .programs__item-title {
-  padding: 10px 5px 29px 70px;
+  grid-area: title;
+  // padding: 10px 5px 29px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 24px;
+  }
 }
 
 .programs__item-description {
+  grid-area: content;
   margin: 0 0 15px;
   padding: 0 13px 23px 0;
-  border-bottom: 1px solid $grey-color;
+  border-bottom: $secondary-border;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0 0 48px;
+    border-bottom: none;
+  }
 }
 
 .programs__item-button {
+  grid-area: button;
   display: flex;
   gap: 15px;
   align-items: center;
