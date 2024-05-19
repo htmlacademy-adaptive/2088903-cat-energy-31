@@ -5,12 +5,20 @@
   @media (min-width: $tablet) {
     padding: 25px 0 0;
   }
+
+  @media (min-width: $desktop) {
+    padding: 55px 0 0;
+  }
 }
 
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    row-gap: 15px;
+  }
 }
 
 .header__logo {
@@ -49,6 +57,7 @@
   position: absolute;
   top: 66px;
   left: 0;
+  z-index: 1;
   display: none;
   min-width: 100%;
   background-color: $white;
@@ -57,6 +66,12 @@
     position: static;
     display: block;
     min-width: 436px;
+    max-width: calc(100% - 200px);
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 600px;
   }
 }
 

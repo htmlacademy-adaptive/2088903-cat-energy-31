@@ -4,6 +4,14 @@
 
 .programs__wrapper {
   padding-top: 20px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 82px;
+  }
 }
 
 .programs__list {
@@ -28,7 +36,7 @@
     "button  button";
   grid-template-columns: 70px 1fr;
   min-height: 266px;
-  padding: 20px;
+  padding: 24px 20px 18px;
   background-color: $primary-color;
 
   @media (min-width: $tablet) {
@@ -40,6 +48,15 @@
     padding: 77px 0 53px 52px;
   }
 
+  @media (min-width: $desktop) {
+    grid-template-areas:
+      "icon    title"
+      "content content"
+      "button  button";
+    grid-template-columns: 162px 1fr;
+    padding: 47px 61px 55px 52px;
+  }
+
   &::before {
     content: "";
     position: relative;
@@ -48,34 +65,26 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
-  @media (min-width: $desktop) {
-    grid-template-areas:
-      "icon    title"
-      "content content"
-      "button  button";
-    grid-template-columns: 214px 1fr;
-  }
 }
 
 .programs__item--slim::before {
   width: 50px;
   height: 53px;
-  margin-top: -3px;
+  margin: -3px 0 0;
   background-image: url("../../icons/stack.svg#sitting-cat");
   background-size: 50px 53px;
 
   @media (min-width: $tablet) {
     width: 200px;
     height: 211px;
-    margin-top: 4px;
-    margin-left: 53px;
+    margin: 4px 0 0 53px;
     background-size: 200px 211px;
   }
 
   @media (min-width: $desktop) {
     width: 100px;
     height: 106px;
+    margin: -6px 0 0;
     background-size: 100px 106px;
   }
 }
@@ -83,7 +92,6 @@
 .programs__item--pro::before {
   width: 67px;
   height: 50px;
-  margin-top: 14px;
   margin-left: -7px;
   background-image: url("../../icons/stack.svg#tiger");
   background-size: 67px 50px;
@@ -104,10 +112,11 @@
 
 .programs__item-title {
   grid-area: title;
-  // padding: 10px 5px 29px 20px;
+  margin: 6px 0 0;
+  padding: 0;
 
   @media (min-width: $tablet) {
-    padding: 0 0 24px;
+    margin: 0 0 24px;
   }
 }
 

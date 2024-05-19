@@ -33,7 +33,7 @@
           </li>
         </ul>
       </nav>
-      <button class="header__mobile-menu" type="button">
+      <button class="header__mobile-menu" type="button" id="mobile-menu">
         <span class="visually-hidden">Показать меню</span>
       </button>
     </div>
@@ -254,24 +254,27 @@
     <section class="contacts">
       <div class="contacts__description container">
         <div class="contacts__content">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+          <h2 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+          <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br>
             <span>Санкт-Петербург</span>
           </address>
         </div>
       </div>
-      <picture>
-        <source media="(min-width: 1200px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Изображение карты">
-      </picture>
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <picture>
+          <source media="(min-width: 1200px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Изображение карты">
+        </picture>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787672859!2d30.32047247805643!3d59.93871647491515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716108182416!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </iframe>
+      </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a class="footer__logo" href="#">
-        <img class="footer__logo-image" src="images/logo-text.svg" width="128" height="124" alt="Текстовый логотип сайта">
+      <a class="footer__logo" href="index.html">
+        <img class="footer__logo-image" src="images/logo-text-mobile.svg" width="128" height="124" alt="Текстовый логотип сайта">
       </a>
       <ul class="footer__socials socials">
         <li class="socials__item">
@@ -290,9 +293,11 @@
           </a>
         </li>
       </ul>
-      <a class="footer__copyright" href="#">
-        <span class="footer__copyright-text">HTML Academy</span>
-      </a>
+      <div class="footer__copyright">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__copyright-text">HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
