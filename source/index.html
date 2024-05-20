@@ -121,21 +121,22 @@
             </p>
           </div>
         </div>
-        <div class="example__slider">
-          <div class="img" id="img1">
-            <picture>
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
-              <img class="example__slider-image" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Фото до, толстый кот">
-            </picture>
-          </div>
-          <div class="img" id="img2">
-            <picture>
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
-              <img class="example__slider-image" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Фото после, худой кот">
-            </picture>
-          </div>
-          <label class="visually-hidden" for="slider">Передвинуть полосу слайдера</label>
-          <input class="example__slider-button" type="range" min="0" max="100" value="50" id="slider" name="slider">
+        <div class="example__slider slider">
+
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
+            <img class="slider__image slider__image--before" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Фото до, толстый кот">
+          </picture>
+
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
+            <img class="example__slider-image slider__image--after" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Фото после, худой кот">
+          </picture>
+          <button class="slider__thumb" type="button">
+            <span class="visually-hidden">
+              Показать разницу до и после
+            </span>
+          </button>
         </div>
       </div>
     </section>
