@@ -19,11 +19,11 @@
   flex: 1 0 66px;
   justify-content: center;
   align-items: center;
-  border-top: $quaternary-border;
+  border-bottom: $quaternary-border;
 
   @media (min-width: $tablet) {
     flex: unset;
-    border-top: none;
+    border-bottom: none;
   }
 }
 

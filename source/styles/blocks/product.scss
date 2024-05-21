@@ -1,13 +1,86 @@
-// .product {
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "image  title"
+    "image  text"
+    "button button";
 
-// }
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "title"
+      "text"
+      "button";
+  }
+}
+
+.product__image-wrapper {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    min-height: 210px;
+    margin: 10px 25px 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.product__title-wrapper {
+  grid-area: title;
+  max-width: 76px;
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    justify-self: center;
+    max-width: 135px;
+    margin: 22px 0 0;
+  }
+}
+
+.product__title {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
+}
+
+.product__text-wrapper {
+  grid-area: text;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 14px 0 21px;
+
+  @media (min-width: $tablet) {
+    margin: 21px 0 32px;
+  }
+}
 
 .product__text {
+  margin: 0;
   font-size: 12px;
   line-height: 16px;
+
+  &:nth-child(even) {
+    text-align: end;
+  }
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
+    border-bottom: $primary-border;
   }
+}
+
+.product__button {
+  grid-area: button;
+  margin-top: auto;
+  text-align: center;
 }

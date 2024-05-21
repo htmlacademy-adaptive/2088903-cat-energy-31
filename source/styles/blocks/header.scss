@@ -1,9 +1,11 @@
 .header {
   position: relative;
   padding: 13px 0 15px;
+  border-bottom: $quaternary-border;
 
   @media (min-width: $tablet) {
     padding: 25px 0 0;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop) {
@@ -55,7 +57,7 @@
 
 .header__nav {
   position: absolute;
-  top: 66px;
+  top: 67px;
   left: 0;
   z-index: 1;
   display: none;
