@@ -108,3 +108,11 @@
 .header__nav:has(+ .header__mobile-menu--opened) {
   display: block;
 }
+
+.header__nav--nojs {
+  position: static;
+  display: block;
+  order: 1;
+  border-top: $quaternary-border;
+  margin-top: 15px;
+}

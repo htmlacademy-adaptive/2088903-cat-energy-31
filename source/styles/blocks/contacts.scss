@@ -2,14 +2,6 @@
   position: relative;
 }
 
-.contacts__description {
-  @media (min-width: $desktop) {
-    position: absolute;
-    z-index: 1;
-    padding-top: 95px;
-  }
-}
-
 .contacts__content {
   display: flex;
   flex-flow: row wrap;
@@ -21,7 +13,10 @@
   }
 
   @media (min-width: $desktop) {
+    position: absolute;
+    z-index: 1;
     max-width: 565px;
+    margin-top: 95px;
     padding: 60px 78px 60px 80px;
     background-color: $white;
   }
