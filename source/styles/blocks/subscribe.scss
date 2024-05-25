@@ -1,6 +1,14 @@
-// .subscribe {
+.subscribe__wrapper {
+  padding-top: 40px;
 
-// }
+  @media (min-width: $tablet) {
+    padding-top: 74px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 96px;
+  }
+}
 
 .subscribe__title {
   @media (min-width: $tablet) {
