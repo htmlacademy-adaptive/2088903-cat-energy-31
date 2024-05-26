@@ -1,6 +1,10 @@
 .footer {
   padding: 20px 0;
   background-color: $primary-color;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .footer__wrapper {
@@ -11,13 +15,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 58px;
+    padding-bottom: 55px;
   }
 }
 
 .footer__logo {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0 16px;
+
+  @media (min-width: $tablet) {
+    margin-right: 34px;
+    padding: 0;
+  }
 }
+
 
 .footer__logo-image {
   &:hover {
@@ -34,10 +46,11 @@
   justify-content: center;
   gap: 24px;
   margin: 0;
-  padding: 20px 0;
+  padding: 20px 0 19px;
   border-top: $secondary-border;
 
   @media (min-width: $tablet) {
+    padding: 0;
     border-top: none;
   }
 }
@@ -50,6 +63,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet) {
+    padding: 0;
     border-top: none;
   }
 }
