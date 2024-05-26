@@ -1,5 +1,20 @@
+.advantages__wrapper {
+  padding-top: 22px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
+}
+
 .advantages__title {
-  padding: 20px 0 0;
+  margin: 0;
 }
 
 .advantages__list {
@@ -7,8 +22,8 @@
   grid-template-columns: 1fr;
   row-gap: 20px;
   list-style: none;
-  margin: 0;
-  padding: 40px 0 49px;
+  margin: 42px 0 0;
+  padding: 0;
   counter-reset: advantages 0;
 
   @media (min-width: $tablet) {

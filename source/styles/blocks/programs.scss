@@ -22,6 +22,10 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $tablet) {
+    gap: 30px;
+  }
+
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -35,6 +39,7 @@
     "content content"
     "button  button";
   grid-template-columns: 70px 1fr;
+  row-gap: 22px;
   min-height: 266px;
   padding: 24px 20px 18px;
   background-color: $primary-color;
@@ -45,6 +50,7 @@
       "content icon"
       "button  icon";
     grid-template-columns: 340px 1fr;
+    row-gap: 0;
     padding: 77px 0 53px 52px;
   }
 
@@ -99,7 +105,7 @@
   @media (min-width: $tablet) {
     width: 268px;
     height: 200px;
-    margin-left: 19px;
+    margin: 14px 0 0 19px;
     background-size: 268px 200px;
   }
 
@@ -122,19 +128,22 @@
 
 .programs__item-description {
   grid-area: content;
-  margin: 0 0 15px;
+  // margin: 0 0 15px;
+  margin: 0;
   padding: 0 13px 23px 0;
   border-bottom: $secondary-border;
 
   @media (min-width: $tablet) {
-    margin: 0;
-    padding: 0 0 48px;
+    margin: 0 0 56px;
+    padding: 0;
     border-bottom: none;
   }
 }
 
 .programs__item-button {
   grid-area: button;
+  position: relative;
+  top: -4px;
   display: flex;
   gap: 15px;
   align-items: center;
@@ -153,10 +162,9 @@
     display: block;
     background-color: $black;
     mask-image: url("../../icons/stack.svg#arrow-to-right");
-    mask-size: 24px 10px;
+    mask-size: 28px 10px;
     mask-repeat: no-repeat;
     mask-position: -8px center;
-    transition: mask-position 0.3s ease;
   }
 
   &:hover::after {
@@ -168,6 +176,7 @@
   }
 
   @media (min-width: $tablet) {
+    gap: 25px;
     font-size: 20px;
     line-height: 30px;
   }

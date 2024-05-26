@@ -30,7 +30,7 @@
 .slider__thumb {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: calc(50% - 2px);
   display: flex;
   justify-content: center;
   width: 4px;
