@@ -18,6 +18,11 @@
     padding-top: 58px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .footer__logo {
@@ -25,8 +30,11 @@
   padding: 20px 0 16px;
 
   @media (min-width: $tablet) {
-    margin-right: 34px;
-    padding: 0;
+    padding: 3px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 6px 0 0;
   }
 }
 
@@ -50,6 +58,7 @@
   border-top: $secondary-border;
 
   @media (min-width: $tablet) {
+    margin-left: 34px;
     padding: 0;
     border-top: none;
   }

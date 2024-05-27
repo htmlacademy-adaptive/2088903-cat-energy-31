@@ -15,6 +15,7 @@
   @media (min-width: $desktop) {
     position: absolute;
     z-index: 1;
+    gap: 95px;
     max-width: 565px;
     margin-top: 95px;
     padding: 60px 78px 60px 80px;
@@ -49,6 +50,10 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: end;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: start;
   }
 }
 
