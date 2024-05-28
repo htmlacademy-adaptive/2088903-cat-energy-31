@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.contacts__description--with-background {
+  background: $primary-color;
+}
+
 .contacts__content {
   display: flex;
   flex-flow: row wrap;
