@@ -12,8 +12,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 462px;
-    background-color: $bg-grey-color;
+    min-height: 462px;
+    background-color: $primary-color;
     z-index: -1;
   }
 }
@@ -134,22 +134,32 @@
 
 .example__item-text {
   position: absolute;
-  left: 19px;
-  bottom: -16px;
+  bottom: 0;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%);
   width: 87px;
+  height: fit-content;
   margin: 0;
   padding: 0 15px;
-  background-color: #eaeaea;
+  background-color: $bg-grey-color;
   text-transform: lowercase;
   text-align: center;
   font-size: 12px;
   line-height: 12px;
 
   @media (min-width: $tablet) {
-    bottom: -6px;
-    left: 24px;
+    top: 88%;
     width: max-content;
+    max-width: 145px;
+    padding: 0 10px;
     background-color: $white;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $tablet) {
+    background-color: $primary-color;
   }
 }
 

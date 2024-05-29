@@ -75,6 +75,7 @@
 .contacts__map-image {
   width: 100%;
   height: 362px;
+  object-fit: cover;
 
   @media (min-width: $tablet) {
     height: 400px;
