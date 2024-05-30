@@ -6,27 +6,38 @@
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-}
 
-.button--primary {
-  background-color: $accent-color;
-  color: $white;
+  &--primary {
+    background-color: $accent-color;
+    color: $white;
 
-  &:hover {
-    background-color: $button-primary-hover-bg;
+    &:hover {
+      background-color: $button-primary-hover-bg;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 
-  &:active {
-    color: rgba($white, 0.3);
+  &--secondary {
+    background-color: $primary-color;
+    color: $primary-font-color;
+
+    &:hover,
+    &:active {
+      background-color: $button-secondary-hover-bg;
+    }
   }
-}
 
-.button--secondary {
-  background-color: $primary-color;
-  color: $primary-font-color;
+  &:disabled {
+    color: $white;
+    background-color: $secondary-color;
 
-  &:hover,
-  &:active {
-    background-color: $button-secondary-hover-bg;
+    &:hover {
+      background-color: $secondary-color;
+      outline: none;
+      cursor: default;
+    }
   }
 }

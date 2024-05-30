@@ -153,21 +153,19 @@
   @media (min-width: $desktop) {
     padding: 6px 0 8px;
   }
+}
 
-  &--show-all:nth-child(even) {
-    margin: 10px 0 21px;
-    text-align: center;
+.product__text--show-all:nth-child(even) {
+  margin: 10px 0 21px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 0 40px 30px;
+    border-bottom: 0;
   }
 
-  &--show-all:nth-child(even) {
-    @media (min-width: $tablet) {
-      margin: 0 40px 30px;
-      border-bottom: 0;
-    }
-
-    @media (min-width: $desktop) {
-      margin: 0 0 40px;
-    }
+  @media (min-width: $desktop) {
+    margin: 0 0 40px;
   }
 }
 

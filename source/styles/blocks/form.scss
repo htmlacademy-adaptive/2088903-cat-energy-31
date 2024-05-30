@@ -27,6 +27,17 @@
   &:focus-visible {
     outline: 2px solid $primary-font-color;
   }
+
+  &:disabled {
+    color: $white;
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: $secondary-color;
+      outline: none;
+      cursor: default;
+    }
+  }
 }
 
 .form__input--error {

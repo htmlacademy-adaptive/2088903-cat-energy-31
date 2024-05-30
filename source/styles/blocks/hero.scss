@@ -1,4 +1,8 @@
 .hero {
+  @media (max-width: $mobile-only) {
+    position: relative;
+  }
+
   @media (min-width: $desktop) {
     &::before {
       content: "";
@@ -34,7 +38,6 @@
   }
 }
 
-
 .hero__wrapper {
   display: flex;
   flex-direction: column;
@@ -55,7 +58,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 65;
+    top: 0;
     left: 0;
     z-index: -1;
     display: block;
@@ -71,7 +74,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 65;
+    top: 0;
     left: 0;
     z-index: -1;
     display: block;

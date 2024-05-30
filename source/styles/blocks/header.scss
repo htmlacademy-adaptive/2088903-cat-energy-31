@@ -110,9 +110,16 @@
 }
 
 .header__nav--nojs {
-  position: static;
-  display: block;
-  order: 1;
-  border-top: $quaternary-border;
-  margin-top: 15px;
+  @media (max-width: $mobile-only) {
+    position: static;
+    display: block;
+    order: 1;
+    margin-top: 15px;
+    margin-bottom: -13px;
+  }
+
+  & > .nav__list {
+    margin: 0 -20px;
+    border-top: $quaternary-border;
+  }
 }
