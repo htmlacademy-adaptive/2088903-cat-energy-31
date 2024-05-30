@@ -1,9 +1,9 @@
 .contacts {
   position: relative;
-}
 
-.contacts__description--with-background {
-  background: $primary-color;
+  &--with-background {
+    background: $primary-color;
+  }
 }
 
 .contacts__content {

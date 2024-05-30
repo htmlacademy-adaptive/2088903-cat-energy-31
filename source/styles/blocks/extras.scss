@@ -139,7 +139,12 @@
   min-height: 290px;
   margin: 36px 0 0;
   padding: 58px 58px 43px;
-  background: linear-gradient(to right, rgba($accent-color, 0.85) 0%, rgba($accent-color, 0.85) 100%), url("../../images/special-offer-backround-mobile@1x.jpg");
+  background-image:
+    linear-gradient(to right, rgba($accent-color, 0.85) 0%, rgba($accent-color, 0.85) 100%),
+    image-set(url("../../images/special-offer-backround-mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/special-offer-backround-mobile@2x.webp") type("image/webp") 2x,
+    url("../../images/special-offer-backround-mobile@1x.jpg") type("image/jpg") 1x,
+    url("../../images/special-offer-backround-mobile@2x.jpg") type("image/jpg") 2x);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,7 +156,12 @@
     min-height: 200px;
     margin: 70px 0 0;
     padding: 57px 125px 57px 77px;
-    background: linear-gradient(to right, rgba($accent-color, 0.85) 0%, rgba($accent-color, 0.85) 100%), url("../../images/special-offer-backround-tablet@1x.jpg");
+    background-image:
+      linear-gradient(to right, rgba($accent-color, 0.85) 0%, rgba($accent-color, 0.85) 100%),
+      image-set(url("../../images/special-offer-backround-tablet@1x.webp") type("image/webp") 1x,
+      url("../../images/special-offer-backround-tablet@2x.webp") type("image/webp") 2x,
+      url("../../images/special-offer-backround-tablet@1x.jpg") type("image/jpg") 1x,
+      url("../../images/special-offer-backround-tablet@2x.jpg") type("image/jpg") 2x);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,7 +173,11 @@
     min-height: 288px;
     margin: 0;
     padding: 56px 42px 43px;
-    background: url("../../images/special-offer-backround-mobile@1x.jpg");
+    background-image:
+      image-set(url("../../images/special-offer-backround-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/special-offer-backround-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/special-offer-backround-mobile@1x.jpg") type("image/jpg") 1x,
+      url("../../images/special-offer-backround-mobile@2x.jpg") type("image/jpg") 2x);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(50% - 18px) 50%;
