@@ -1,0 +1,26 @@
+.title-decoration {
+  position: relative;
+  width: fit-content;
+  background-color: $white;
+  box-shadow: -20px 0 0 0 $white, 40px 0 0 0 $white;
+
+  @media (min-width: $tablet) {
+    box-shadow: 0 0 0 0 $white, 40px 0 0 0 $white;
+  }
+
+  @media (min-width: $desktop) {
+    box-shadow: -40px 0 0 0 $white, 40px 0 0 0 $white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 2px;
+    background-color: $accent-color;
+    box-shadow: 100vw 0 0 0 $accent-color;
+  }
+}

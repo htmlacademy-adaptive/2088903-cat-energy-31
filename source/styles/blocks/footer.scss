@@ -1,0 +1,118 @@
+.footer {
+  padding: 20px 0;
+  background-color: $primary-color;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
+
+.footer__logo {
+  text-align: center;
+  padding: 20px 0 16px;
+
+  @media (min-width: $tablet) {
+    padding: 3px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 6px 0 0;
+  }
+}
+
+
+.footer__logo-image {
+  &:hover {
+    opacity: 0.81;
+  }
+
+  &:active {
+    opacity: 0.62;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 20px 0 19px;
+  border-top: $secondary-border;
+
+  @media (min-width: $tablet) {
+    margin-left: 34px;
+    padding: 0;
+    border-top: none;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-top: $secondary-border;
+  line-height: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    border-top: none;
+  }
+}
+
+.footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+  width: 100%;
+  color: $primary-font-color;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &::after {
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#copyright-logo");
+    mask-size: 27px 34px;
+    background-color: $icon-color;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: background-color 0.3s ease;
+  }
+
+  &:hover::after {
+    background-color: $accent-color;
+  }
+
+  &:active {
+    color: rgba($primary-font-color, 0.3);
+  }
+
+  &:active::after {
+    background-color: rgba($accent-color, 0.3);
+  }
+}
+
+.footer__copyright-text {
+  font-size: 16px;
+  line-height: 20px;
+}

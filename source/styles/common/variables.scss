@@ -1,1 +1,29 @@
-/* здесь используйте глобальные переменные */
+$mobile-only: 767px;
+$tablet: 768px;
+$desktop: 1440px;
+
+$primary-font: "Lato", "Arial", sans-serif;
+$secondary-font: "Oswald", "Arial", sans-serif;
+
+$primary-font-color: #444444;
+$subtitle-font-color: #222222;
+$secondary-font-color: #111111;
+
+$white: #ffffff;
+$black: #000000;
+
+$accent-color: #68b738;
+$primary-color: #f2f2f2;
+$secondary-color: #ebebeb;
+$error-color: #ff8282;
+$icon-color: #666666;
+
+$bg-grey-color: #eaeaea;
+
+$button-primary-hover-bg: #5eaa2f;
+$button-secondary-hover-bg: $secondary-color;
+
+$primary-border: 1px solid #cdcdcd;
+$secondary-border: 1px solid #d9d9d9;
+$tertiary-border: 1px solid $secondary-color;
+$quaternary-border: 1px solid #e6e6e6;

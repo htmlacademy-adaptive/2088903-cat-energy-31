@@ -1,0 +1,123 @@
+.advantages__wrapper {
+  padding-top: 22px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+    padding-bottom: 55px;
+    border-bottom: $quaternary-border;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+    border-bottom: 0;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  list-style: none;
+  margin: 42px 0 0;
+  padding: 0;
+  counter-reset: advantages 0;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 59px;
+    margin: 23px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 37px 75px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  counter-increment: advantages 1;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 31px;
+    width: 250px;
+    min-height: 280px;
+    align-items: start;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: $accent-color;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    content: counter(advantages);
+    position: absolute;
+    top: 10px;
+    left: 115px;
+    z-index: -1;
+    display: none;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $primary-color;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
+  }
+}
+
+.advantages__item--healthy::before {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-size: 25px 28px;
+}
+
+.advantages__item--handy::before {
+  background-image: url("../../icons/stack.svg#powder");
+  background-size: 26px 29px;
+}
+
+.advantages__item--swap::before {
+  background-image: url("../../icons/stack.svg#eat");
+  background-size: 25px 28px;
+}
+
+.advantages__item--result::before {
+  background-image: url("../../icons/stack.svg#watch");
+  background-size: 27px 31px;
+}
+
+.advantages__item-description {
+  margin: 0;
+  padding: 2px 0 4px;
+  word-break: break-word;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}

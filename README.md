@@ -1,11 +1,11 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дмитрий Краснов](https://up.htmlacademy.ru/adaptive/31/user/2088903).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
 
 ---
 
-**Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
+**Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
 
 _Не удаляйте и не обращайте внимание на файлы и папки:_<br>
 _`.github`, `.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.linthtmlrc`, `.stylelintrc`, `.gulpfile.js`, `svgo.config.js` `package.json`, `package-lock.json`._

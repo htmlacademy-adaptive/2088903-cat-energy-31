@@ -1,0 +1,207 @@
+.example {
+  position: relative;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 462px;
+    background-color: $primary-color;
+    z-index: -1;
+  }
+}
+
+.example__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 20px;
+  padding-top: 27px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    gap: 104px;
+    padding-top: 45px;
+    padding-bottom: 101px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 0;
+    padding-bottom: 75px;
+  }
+}
+
+.example__text-wrapper {
+  @media (min-width: $desktop) {
+    max-width: 436px;
+  }
+}
+
+.example__title {
+  @media (min-width: $desktop) {
+    margin: 9px 0 0;
+  }
+}
+
+.example__description {
+  margin: 42px 0 0;
+
+  @media (min-width: $tablet) {
+    margin: 60px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 146px 0 0;
+  }
+}
+
+.example__stats {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 34px;
+  margin: 20px 0 0;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 55px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    gap: 60px;
+    margin: 69px 0 0;
+  }
+}
+
+.example__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    justify-content: start;
+    gap: 43px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 42px;
+  }
+}
+
+.example__item {
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: $primary-border;
+  border-radius: 3px;
+
+  @media (min-width: $tablet) {
+    width: 162px;
+    height: 72px;
+  }
+}
+
+.example__item-title {
+  margin: 0;
+  padding: 14px 0 0;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__item-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%);
+  width: 87px;
+  height: fit-content;
+  margin: 0;
+  padding: 0 15px;
+  background-color: $bg-grey-color;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet) {
+    top: 88%;
+    width: max-content;
+    max-width: 145px;
+    padding: 0 10px;
+    background-color: $white;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $primary-color;
+  }
+}
+
+.example__total {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: end;
+    gap: 9px;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 60px;
+    padding: 0;
+  }
+}
+
+.example__slider {
+  position: relative;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 10px;
+  }
+}

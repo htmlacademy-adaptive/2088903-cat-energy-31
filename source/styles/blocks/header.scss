@@ -1,5 +1,129 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  position: relative;
+  padding: 14px 0 12px;
+  border-bottom: $quaternary-border;
+
+  @media (min-width: $tablet) {
+    padding: 25px 0 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 55px 0 0;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    row-gap: 15px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  height: 38px;
+
+  @media (min-width: $tablet) {
+    gap: 13px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 14px;
+    height: 59px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header__logo-text {
+  @media (min-width: $desktop) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.header__nav {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  z-index: 1;
+  display: none;
+  min-width: 100%;
+  background-color: $white;
+
+  @media (min-width: $tablet) {
+    position: static;
+    display: block;
+    min-width: 436px;
+    max-width: calc(100% - 200px);
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 600px;
+  }
+}
+
+.header__mobile-menu {
+  padding: 5px 0 5px 5px;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../icons/stack.svg#menu-closed");
+    background-size: 24px 24px;
+  }
+
+  &--opened {
+    &::before {
+      background-image: url("../../icons/stack.svg#menu-opened");
+      background-size: 18px 18px;
+    }
+  }
+
+  &--nojs {
+    visibility: hidden;
+  }
+}
+
+.header__nav:has(+ .header__mobile-menu--opened) {
+  display: block;
+}
+
+.header__nav--nojs {
+  @media (max-width: $mobile-only) {
+    position: static;
+    display: block;
+    order: 1;
+    margin-top: 15px;
+    margin-bottom: -13px;
+  }
+
+  & > .nav__list {
+    margin: 0 -20px;
+    border-top: $quaternary-border;
+  }
 }
