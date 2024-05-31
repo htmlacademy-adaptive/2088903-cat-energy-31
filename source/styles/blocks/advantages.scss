@@ -78,7 +78,7 @@
     content: counter(advantages);
     position: absolute;
     top: 10px;
-    right: 3px;
+    left: 115px;
     z-index: -1;
     display: none;
     font-family: $secondary-font;
@@ -110,10 +110,6 @@
 .advantages__item--result::before {
   background-image: url("../../icons/stack.svg#watch");
   background-size: 27px 31px;
-}
-
-.advantages__item--healthy::after {
-  right: 25px;
 }
 
 .advantages__item-description {

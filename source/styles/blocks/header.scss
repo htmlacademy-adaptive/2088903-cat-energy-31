@@ -96,12 +96,16 @@
     background-image: url("../../icons/stack.svg#menu-closed");
     background-size: 24px 24px;
   }
-}
 
-.header__mobile-menu--opened {
-  &::before {
-    background-image: url("../../icons/stack.svg#menu-opened");
-    background-size: 18px 18px;
+  &--opened {
+    &::before {
+      background-image: url("../../icons/stack.svg#menu-opened");
+      background-size: 18px 18px;
+    }
+  }
+
+  &--nojs {
+    visibility: hidden;
   }
 }
 
