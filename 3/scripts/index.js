@@ -1,1 +1,0 @@
-var n=document.querySelector(".header__nav"),e=document.querySelector(".header__mobile-menu"),o=document.querySelector(".contacts--nojs");n.classList.remove("header__nav--nojs");e.classList.remove("header__mobile-menu--nojs");o.classList.remove("contacts--nojs");var s=()=>e.classList.toggle("header__mobile-menu--opened");e.addEventListener("click",s);
