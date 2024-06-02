@@ -4,35 +4,25 @@
   }
 
   @media (min-width: $desktop) {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      display: block;
-      min-height: 694px;
-      width: 50%;
-      background-image: linear-gradient(to right, rgba(84, 83, 88, 1) 0%, rgba(66, 64, 69, 1) 100%);
-    }
+    position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: -114;
       right: 0;
       z-index: -1;
-      display: block;
-      min-height: 694px;
       width: 50%;
+      height: calc(100% + 114px);
       background-image:
         linear-gradient(to left, rgba(99, 166, 59, 0.85), rgba(104, 183, 56, 0.85)),
         image-set(url("../../images/hero-background-desktop@1x.webp") type("image/webp") 1x,
         url("../../images/hero-background-desktop@2x.webp") type("image/webp") 2x,
         url("../../images/hero-background-desktop@1x.jpg") type("image/jpg") 1x,
-        url("../../images/hero-background-desktop@2x.jpg") type("image/jpg") 2x);
+        url("../../images/hero-background-desktop@2x.jpg") type("image/jpg") 2x),
+        linear-gradient(to right, rgba(84, 83, 88, 1) 0%, rgba(66, 64, 69, 1) 100%);
       background-repeat: no-repeat;
-      background-position: left;
+      background-position: 0 100%;
       background-size: cover;
     }
   }

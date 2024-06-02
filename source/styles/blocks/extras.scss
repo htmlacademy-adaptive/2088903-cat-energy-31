@@ -64,7 +64,7 @@
     grid-template-areas:
       "title  quantity price"
       "button button   button";
-    gap: 25px 0;
+    gap: 25px 5px;
     align-items: center;
     padding: 26px 38px 27px;
     border-left: $primary-border;
