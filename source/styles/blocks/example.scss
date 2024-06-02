@@ -1,20 +1,13 @@
 .example {
   position: relative;
-  background-color: #eaeaea;
+  background-color: $bg-grey-color;
 
   @media (min-width: $tablet) {
-    background-color: transparent;
+    background-image: linear-gradient(to top, $bg-grey-color 0%, $bg-grey-color 462px, $white 462px, $white 100%);
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    min-height: 462px;
-    background-color: $primary-color;
-    z-index: -1;
+  @media (min-width: $desktop) {
+    background-image: linear-gradient(to bottom, $white 0%, $white 145px, $primary-color 145px, $primary-color 100%);
   }
 }
 

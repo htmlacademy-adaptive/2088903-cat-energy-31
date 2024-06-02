@@ -9,7 +9,6 @@
 
 .socials__link {
   background-color: $icon-color;
-  transition: background-color 0.3s ease;
 
   &::before {
     content: "";
@@ -19,7 +18,6 @@
     background-color: inherit;
     mask-repeat: no-repeat;
     mask-position: center;
-    transition: background-color 0.3s ease;
   }
 
   &:hover {

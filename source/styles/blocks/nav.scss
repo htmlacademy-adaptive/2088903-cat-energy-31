@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet) {
     flex: unset;
-    border-bottom: none;
+    border-bottom: 0;
   }
 }
 
@@ -36,16 +36,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &:hover {
-    color: rgba($black, 0.6);
-  }
-
-  &:active {
-    color: rgba($black, 0.3);
-  }
-
   @media (min-width: $tablet) {
-    // height: 36px;
     padding: 10px 0;
     font-size: 18px;
     line-height: 24px;
@@ -54,6 +45,14 @@
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
   }
 }
 
