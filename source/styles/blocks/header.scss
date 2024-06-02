@@ -18,6 +18,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @media (max-width: $mobile-only) {
+    gap: 0 61px;
+  }
+
   @media (min-width: $tablet) {
     row-gap: 15px;
   }
@@ -28,6 +32,10 @@
   align-items: center;
   gap: 56px;
   height: 38px;
+
+  @media (max-width: $mobile-only) {
+    flex-grow: 1;
+  }
 
   @media (min-width: $tablet) {
     gap: 13px;
@@ -49,6 +57,10 @@
 }
 
 .header__logo-text {
+  @media (max-width: $mobile-only) {
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop) {
     width: 118px;
     height: 21px;
@@ -123,7 +135,9 @@
   }
 
   & > .nav__list {
-    margin: 0 -20px;
-    border-top: $quaternary-border;
+    @media (max-width: $mobile-only) {
+      margin: 0 -20px;
+      border-top: $quaternary-border;
+    }
   }
 }
